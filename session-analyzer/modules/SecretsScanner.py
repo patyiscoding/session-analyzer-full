@@ -22,7 +22,7 @@ class SecretsScanner():
     secretsPatterns = []
 
     SCRIPTDIR = Path(__file__).resolve().parent
-    yamlPath = SCRIPTDIR / ".." / "third-party" / "awesome-regex" / "regexes.yml"
+    yamlPath = SCRIPTDIR / ".." / "third-party" / "awesome-regex-list" / "regexes.yml"
 
     gitleaksPath = SCRIPTDIR / ".." / "third-party" /  "gitleaks.exe" if platform.system() == "Windows" else "gitleaks"
 

@@ -33,7 +33,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY dashboardServer.py sessionAnalyzer.py ./
 COPY helpers/ ./helpers/
 COPY modules/ ./modules/
-COPY third-party/awesome-regex/ ./third-party/awesome-regex/
+COPY third-party/awesome-regex-list/ ./third-party/awesome-regex-list/
 
 COPY --from=hashcat-builder /build/hashcat/hashcat ./third-party/hashcat/hashcat
 COPY --from=hashcat-builder /build/hashcat/OpenCL ./third-party/hashcat/OpenCL
