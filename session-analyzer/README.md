@@ -7,7 +7,7 @@ The folder structure is as follows:
 - session-analyzer (this repository)
     - modules/
     - third-party/
-        - awesome-regex-list - Regex list used for secrets scanning - https://github.com/Trendyol/awesome-regex-list/tree/main
+        - awesome-regex - Regex list used for secrets scanning - https://github.com/Trendyol/awesome-regex-list/tree/main
         - hashcat - Password cracking tool - https://github.com/hashcat/hashcat/tree/master 
     - sessionAnalyzer.py: entry point
     - dashboardServer.py: Vulnerability Dashboard backend
