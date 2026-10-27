@@ -38,7 +38,7 @@ COPY third-party/awesome-regex-list/ ./third-party/awesome-regex-list/
 COPY --from=hashcat-builder /build/hashcat/hashcat ./third-party/hashcat/hashcat
 COPY --from=hashcat-builder /build/hashcat/OpenCL ./third-party/hashcat/OpenCL
 
-COPY --from=gitleaks-fetch /usr/bin/gitleaks ./third-party/gitleaks
+COPY --from=gitleaks-fetch /usr/bin/gitleaks /usr/local/bin/gitleaks
 RUN chown -R analyzer:analyzer /app
 
 USER analyzer
